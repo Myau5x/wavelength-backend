@@ -3,46 +3,43 @@ $(document).ready(function() {
     
 
 
-    logBtn = $("#login-btn");
-    logBtn.on("click", function(event) {
-      let userNameInput = $("#login-username");
-      let passwordInput = $("#login-password");
+    logFrm = $("#login-form");
+    logFrm.on("submit", function(event) {
       event.preventDefault();
+      let emailInput = $("#login-email");
+      let passwordInput = $("#login-password");
+      
       let userData = {
-        userName: userNameInput.val().trim(),
+        email: emailInput.val().trim(),
         password: passwordInput.val().trim()
       };
   
-      if (!userData.userName || !userData.password) {
+      if (!userData.email || !userData.password) {
         return;
       }
   
       // If we have an email and password we run the loginUser function and clear the form
-      loginUser(userData.userName, userData.password);
+      loginUser(userData.email, userData.password);
       userNameInput.val("");
       passwordInput.val("");
     });
   
-    // loginUser does a post to our "api/login" route and if successful, redirects us the the members page
-    function loginUser(userName, password) {
+    // loginUser does a post to our "api/login" route and if successful, redirects us the the profile page
+    function loginUser(email, password) {
         //console.log(userName,password,'api/login');
         //console.log(userName,password);
       $.post("/api/login", {
-        userName: userName,
+        email: email,
         password: password
       })
         .then(function() {
-          window.location.replace("/sightings");  ///Change this
+          window.location.replace("/profile");  ///Change this
           // If there's an error, log the error
         })
        .catch(function(err) {
-          //alert("something went wrong, try again");
-          UIkit.notification({
-            message: 'Check your username/password!',
-            status: 'danger',
-            pos: 'top-center',
-            timeout: 2000
-        });
+          alert("something went wrong, try again");
+          
+        
           console.log(err);
         });
     }
