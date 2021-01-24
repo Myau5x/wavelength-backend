@@ -10,6 +10,8 @@ module.exports = function(app) {
     
     res.sendFile(path.join(__dirname, "../public/community.html"));
   });
+
+  
   
   app.get("/signup", function(req, res) {
     // If the user already has an account send them to the members page
@@ -32,4 +34,12 @@ module.exports = function(app) {
   app.get("/profile", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/profile.html"));
   });
+  app.get("/help", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/helpfulinfo.html"));
+  });
+  app.get("/prof", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/ProfessionalProfile.html"));
+  });
+  
+
 }
