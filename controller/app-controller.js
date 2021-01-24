@@ -1,6 +1,7 @@
 // Import the models
 const db = require("../models");
 var path = require("path");
+var checkIfLoggedIn = require("../config/middleware/checkIfLoggedIn");
 
 
 module.exports = function(app) {
@@ -40,6 +41,8 @@ module.exports = function(app) {
   app.get("/prof", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/ProfessionalProfile.html"));
   });
-  
+  app.get("/chat", checkIfLoggedIn, function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/chat.html"));
+  });
 
 }

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Your Profile</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/chatstyle.css">
+
+</head>
+
+<body>
+<!-- NAVBAR -->
+    <header id="navigation">
+      <div id="logo">
+        <a href="index.html"><span>Wavelength</span></a>
+      </div>
+      <nav>
+        <ul id="nav_links">
+          <li><a href="community.html">Community</a></li>
+          <li><a href="#">Chat</a></li>
+          <li><a href="helpfulinfo.html">Learn</a></li>
+        </ul>
+      </nav>
+      <div id="right_most">
+        <img src="images/User2.png">
+        <div class="text">
+          <span>Hi, You!</span>
+        </div>
+      </div>
+    </header>
+
+
+<div class="container">
+  <div class="contacts">
+    <ul>
+      <div id="pals">
+      <span>Pals</span>
+      </div>
+      <li><img src="images/imagesUser1.png"><p>hagridshut</p></li>
+      <li><img src="images/User3.png"><p>spotlesseither</p></li>
+      <li><img src="images/User4.png"><p>ingredientshrug</p></li>
+      <li><img src="images/User2.png"><p>mewtwowashere</p></li>
+    </ul>
+  </div>
+  <div class="messages">
+    <ul id="msgID">
+      <li>
+        Dear SulphurSunshine,<br>
+        Sitting in the sun, away from everyone who had done him harm in the past, he quietly listened to those who roamed by. He felt at peace in the moment, hoping it would last, but knowing the reprieve would soon come to an end. He closed his eyes, the sun beating down on face and he smiled. He smiled for the first time in as long as he could remember.
+        <br>
+        I guess we could discuss the implications of the phrase "meant to be." That is if we wanted to drown ourselves in a sea of backwardly referential semantics and other mumbo-jumbo. Maybe such a discussion would result in the determination that "meant to be" is exactly as meaningless a phrase as it seems to be, and that none of us is actually meant to be doing anything at all. But that's my existential underpants underpinnings showing. It's the way the cookie crumbles. And now I want a cookie.
+      </li>      
+      <li>
+        Dear HagridsHut, <br>
+        Eating raw fish didn't sound like a good idea. "It's a delicacy in Japan," didn't seem to make it any more appetizing. Raw fish is raw fish, delicacy or not.<br>
+        This is important to remember. Love isn't like pie. You don't need to divide it among all your friends and loved ones. No matter how much love you give, you can always give more. It doesn't run out, so don't try to hold back giving it as if it may one day run out. Give it freely and as much as you want.<br>
+        He sat across from her trying to imagine it was the first time. It wasn't. Had it been a hundred? It quite possibly could have been. Two hundred? Probably not. His mind wandered until he caught himself and again tried to imagine it was the first time.
+      </li>
+      <li id="newMsg"><button onclick="revealMsg()"><img src="images/letter.png"></button></li>
+    </ul>
+  </div>
+  <script>
+      function revealMsg(){
+        //console.log(document.querySelectorAll("#msgID li"));
+       let items = document.querySelectorAll("#msgID li");
+       let lastchild = items[items.length-1];
+        lastchild.textContent = `Dear SulpherSunshine,\n
+          They rushed out the door, grabbing anything and everything they could think of they might need. There was no time to double-check to make sure they weren't leaving something important behind. Everything was thrown into the car and they sped off. Thirty minutes later they were safe and that was when it dawned on them that they had forgotten the most important thing of all.
+          The amber droplet hung from the branch, reaching fullness and ready to drop. It waited. While many of the other droplets were satisfied to form as big as they could and release, this droplet had other plans. It wanted to be part of history. It wanted to be remembered long after all the other droplets had dissolved into history. So it waited for the perfect specimen to fly by to trap and capture that it hoped would eventually be discovered hundreds of years in the future.`;
+      }
+    </script>
+  <div class="stack-wrap"></div>
+  <div class="form">
+    <div class="form-inner">
+      <input type = "text">
+      <button><img src="images/pen.png"></button>
+    </div>
+  </div>
+</div>
+</body>
+</html>
