@@ -4,7 +4,11 @@ $(document).ready(function() {
 
 
     logFrm = $("#login-form");
-    logFrm.on("submit", function(event) {
+    SbmBtn = $("#submit");
+    console.log(logFrm.html());
+
+    //logFrm.on("submit", function(event) 
+    SbmBtn.on("click",function(event){
       event.preventDefault();
       let emailInput = $("#login-email");
       let passwordInput = $("#login-password");
