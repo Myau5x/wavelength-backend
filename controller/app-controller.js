@@ -41,7 +41,7 @@ module.exports = function(app) {
   app.get("/prof", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/ProfessionalProfile.html"));
   });
-  app.get("/community.html", function(req, res) {
+  app.get("/community", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/community.html"));
   });
   app.get("/chat", checkIfLoggedIn, function(req, res) {
