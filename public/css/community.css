@@ -13,6 +13,8 @@ header{
 .top-body
 {
     margin-bottom:100px ;
+    display: flex;
+    justify-content: space-around;
 }
 .input-bar
 {
@@ -22,19 +24,44 @@ header{
     align-items: center;
 }
 .input-bar input{
-    border-top:none;
-    border-left:none;
-    border-right:none;
+    border-bottom: 2px solid black;
 }
-.input-bar input:hover{
-    border-top:none;
-    border-left:none;
-    border-right:none;
-}
+
 input:focus{
     outline: none;
 }
 .card
 {
-    margin:10px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    border: none;
 }
+
+.top-body a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+
+.card-img-top{
+    border: 3px solid #FFAE42;
+    border-bottom: 0;
+}
+
+.card-body{
+    border: 3px solid #FFAE42;
+    border-top: 0;
+    height: 180px;
+    text-align: center;
+}
+
+.card-body h5{
+     font-weight: 600;
+}
+
+.card-body a:hover{
+    cursor: pointer;
+    color: #C5E1E4;
+    text-decoration: none;
+}
+
