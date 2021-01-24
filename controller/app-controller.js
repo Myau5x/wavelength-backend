@@ -9,7 +9,7 @@ module.exports = function(app) {
   app.get("/", function(req, res) {
     // If the user already has an account send them to the members page
     
-    res.sendFile(path.join(__dirname, "../public/community.html"));
+    res.sendFile(path.join(__dirname, "../public/index.html"));
   });
 
   
@@ -40,6 +40,9 @@ module.exports = function(app) {
   });
   app.get("/prof", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/ProfessionalProfile.html"));
+  });
+  app.get("/community.html", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/community.html"));
   });
   app.get("/chat", checkIfLoggedIn, function(req, res) {
     res.sendFile(path.join(__dirname, "../public/chat.html"));
