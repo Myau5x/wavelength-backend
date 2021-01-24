@@ -5,99 +5,32 @@
 		border: none;
 	}
 
-	body {
-		font-family: 'Poppins', sans-serif;}
-
-	#navigation {
-		width: 100%;
-		height: 70px;
-		left: 0px;
-		top: 0px;
-		background-color: rgba(197,225,228,1);
-	}
-
-	li, a{
-		font-size: 16px;
-		text-decoration: none;
-		color: #000000;
-	}
-
-	header {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		padding: 30px 10%;
-		animation: fade 2s ease-in ;
-	}
-
-	#logo a{
-		font-size: 24px;
-		font-weight: 700;
-	}
-
-	#logo a:hover{
-		transition: all 0.3s ease 0s;
-		color: white;
-	}
-
-	#nav_links li{
-		list-style: none;
-		display: inline-block;
-		padding: 0px 20px;
-	}
-
-	#nav_links li a {
-		transition: all 0.3s ease 0s;
-	}
-
-	#nav_links li a:hover {
-		color: white;
-	}
-
-	#signup{
-		font-family: 'Poppins', sans-serif;
-		font-weight: 600;
-		padding: 5px 20px;
-		background-color: transparent;
-		border: none;
-	}
-
-	#login {
-		font-family: 'Poppins', sans-serif;
-		font-weight: 600;
-		padding: 5px 20px;
-		background-color: #FFAE42;
-		border-radius: 20px;
-		box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-	}
-
 	#right_most {
 		width: 20%;
 		display: flex;
 		justify-content: space-between;
 	}
 
-body {
-	font-family: "Poppins", sans-serif;
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	align-content: center;
-	justify-content: center;
-	color: white;
+  body {
+  font-family: "Poppins", sans-serif;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
+
 
 .container {
   width: 400px;
+  height: 600px;
   margin-top: 100px;
-  margin-left: 5%;
+  margin-left: 38%;
 }
 
 form {
   display: flex;
   flex-direction: column;
   background: transparent;
-  max-width: 320px;
+  max-width: 450px;
   padding: 2rem 2rem 2rem 2rem;
   position: relative;
 }
@@ -111,7 +44,7 @@ form::before, form::after {
 form::before {
   z-index: -1;
   background: transparent;
-  transform: translateX(-3.25rem) translateY(-3.5rem);
+  transform: translateX(-3.25rem) translateY(-3.25rem);
   border: 6px solid #2F2E41;
 }
 form::after {
@@ -123,13 +56,13 @@ form h1 {
   text-align: center;
   margin: 0 0 0.25rem 0;
   padding: 0;
-  font-size: 1.5rem;
+  font-size: 30px;
 }
 form small {
   display: block;
   margin: 0 auto 1rem;
   padding: 0;
-  font-size: 14px;
+  font-size: 18px;
 }
 form:focus-within {
   background: #2F2E41;
@@ -153,9 +86,11 @@ form label {
   opacity: 0;
 }
 form input {
-  padding: 10px 20px;
+  padding: 10px 15px;
   border: 4px solid white;
   margin: 0 1.5rem;
+  font-size: 15px;
+  font-family: "Poppins";
   background-color: transparent !important;
   -webkit-appearance: none;
   color: white;
@@ -173,6 +108,7 @@ form input:-ms-input-placeholder {
 }
 form input::placeholder {
   color: white;
+  opacity: 0.5;
 }
 form input:focus {
   color: #FFAE42;
@@ -181,7 +117,7 @@ form input:focus {
   border: 6px solid #FFAE42;
 }
 form input::-webkit-input-placeholder {
-  opacity: 1;
+  opacity: 0.7;
   -webkit-transition: inherit;
   transition: inherit;
 }
@@ -217,4 +153,15 @@ form p.success-message {
   text-align: center;
   line-height: 2rem;
   margin: 1.5rem auto 5rem auto;
+}
+
+#textS {
+  font-size: 14px;
+}
+
+#textS a{
+  color:white;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 14px;
 }

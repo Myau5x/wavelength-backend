@@ -15,10 +15,9 @@
 }
 #Helpful_info {
     position: absolute;
-    width: 1366px;
-    height: 891px;
+    width: 100%;
+    height: 1000px;
     background-color: rgba(255,255,255,1);
-    overflow: hidden;
     --web-view-name: Helpful info;
     --web-view-id: Helpful_info;
     --web-scale-on-resize: true;
@@ -388,14 +387,14 @@
     transform-origin: center;
 }
 #All_Articles_ {
-    left: 545px;
+    left: 635px;
     top: 110px;
     position: absolute;
     overflow: visible;
     width: 259px;
     white-space: nowrap;
     text-align: left;
-    font-family: RooneySans,'Poppins', 'Source Sans Pro', sans-serif;
+    font-family: 'Poppins',sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 50px;
@@ -444,7 +443,7 @@
     position: absolute;
     width: 536px;
     height: 152px;
-    left: 132px;
+    left: 180px;
     top: 292px;
     overflow: visible;
 }
@@ -466,6 +465,7 @@
     top: 0px;
     transform: matrix(1,0,0,1,0,0);
 }
+
 #Group_55 {
     position: absolute;
     width: 150.59px;
@@ -914,7 +914,7 @@
     position: absolute;
     width: 536px;
     height: 152px;
-    left: 697px;
+    left: 800px;
     top: 292px;
     overflow: visible;
 }
@@ -1428,7 +1428,7 @@
     position: absolute;
     width: 536px;
     height: 152px;
-    left: 132px;
+    left: 180px;
     top: 481px;
     overflow: visible;
 }
@@ -2758,7 +2758,7 @@
     position: absolute;
     width: 536px;
     height: 152px;
-    left: 697px;
+    left: 800px;
     top: 481px;
     overflow: visible;
 }
@@ -3169,7 +3169,7 @@
     position: absolute;
     width: 536px;
     height: 152px;
-    left: 132px;
+    left: 180px;
     top: 670px;
     overflow: visible;
 }
@@ -4014,7 +4014,7 @@
     position: absolute;
     width: 536px;
     height: 152px;
-    left: 697px;
+    left: 800px;
     top: 670px;
     overflow: visible;
 }
